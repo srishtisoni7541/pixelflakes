@@ -1,0 +1,631 @@
+* {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+}
+
+html,
+body {
+     height: 100%;
+     width: 100%;
+}
+
+@font-face {
+     font-family: pixelflakes;
+     src: url(https://www.pixelflakes.com/_nuxt/fonts/AtHaussStd-Medium.05084bc.woff2);
+}
+
+#page1 {
+     height: 150vh;
+     width: 100%;
+     background-color: rgb(151, 135, 135);
+
+}
+
+#page1loader {
+     height: 150vh;
+     width: 100%;
+     background-color: #0c0c0c;
+     position: absolute;
+     top: 0;
+     left: 0;
+     /* display:  none; */
+}
+
+#img1 {
+     height: 200px;
+     width: 160px;
+     background-color: #fff;
+     position: relative;
+     left: 10%;
+     top: 15%;
+}
+
+video {
+     height: 200px;
+     width: 160px;
+     object-fit: cover;
+}
+
+#img2 {
+     height: 200px;
+     width: 160px;
+     background-color: #fff;
+     position: relative;
+     left: 80%;
+     top: 4%;
+}
+
+video {
+     height: 200px;
+     width: 160px;
+     object-fit: cover;
+}
+
+#img3 {
+     height: 180px;
+     width: 250px;
+     background-color: #fff;
+     position: absolute;
+     top: 60%;
+     left: 30%;
+     z-index: 999;
+}
+
+video {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+#page1loader p {
+     color: #fff;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 55px;
+     position: absolute;
+     top: 30%;
+     left: 25%;
+     z-index: 99;
+     font-weight: 600;
+}
+
+#page1nav {
+     height: 20vh;
+     width: 100%;
+     /* background-color: #fff; */
+     position: fixed;
+     top: 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     opacity: 0;
+     left: 0;
+     /* z-index: 9; */
+}
+
+#left {
+     margin-left: 5%;
+}
+
+#left h2 {
+     font-family: "pixelflakes";
+     font-size: 30px;
+
+}
+
+#center {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 2px;
+     margin-left: -15%;
+}
+
+#center a {
+     text-decoration: none;
+     /* text-align: center; */
+     color: #000;
+     font-family: "pixelflakes";
+}
+
+#right {
+     height: 50px;
+     width: 50px;
+     background-color: #000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: 5%;
+}
+
+#right i {
+     color: #fff;
+     font-size: 40px;
+}
+
+#line {
+     height: 40px;
+     width: 83%;
+     border-bottom: 1px solid #717070;
+     /* margin-left: 10%; */
+     background-color: rgb(151, 135, 135);
+     position: relative;
+     top: 108%;
+     left: 9%;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+
+#line a {
+     text-decoration: none;
+     color: black;
+     font-family: lato;
+     font-size: 20px;
+}
+
+#line i {
+     font-size: 20px;
+     /* width: 20px; */
+}
+
+#fonts {
+     height: 30px;
+     width: auto;
+     background-color: aliceblue;
+     overflow: hidden;
+}
+
+#fonts h3 {
+     font-family: lato;
+     font-size: 25px;
+}
+
+#page2 {
+     height: 100vh;
+     width: 100%;
+     background-color: rgb(151, 135, 135);
+
+}
+
+#page2 #heading {
+     height: 50%;
+     width: 70%;
+     /* background-color: #fff; */
+     position: relative;
+     top: 20%;
+     left: 10%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+#heading p {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 65px;
+     font-weight: 500;
+     line-height: 70px;
+}
+
+#box {
+     height: 40px;
+     width: 170px;
+     /* background-color: #fff; */
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     margin-top: 15%;
+     margin-left: 2%;
+
+}
+
+#box #sqr {
+     height: 6px;
+     width: 5px;
+     background-color: #000;
+}
+
+#box h4 {
+     font-family: lato;
+     font-size: 15px;
+}
+
+#page3 {
+     height: 240vh;
+     width: 100%;
+     /* background-color: aqua; */
+     background-color: rgb(151, 135, 135);
+     position: relative;
+
+}
+
+#page3 .cursor1 {
+     height: 40px;
+     width: 100px;
+     background-color: #0e0d0d;
+     position: absolute;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     top: 0;
+     left: 0;
+     z-index: 999;
+     scale: 0;
+     cursor: pointer;
+}
+
+.cursor1 .point1 {
+     height: 5px;
+     width: 5px;
+     background-color: #fff;
+     margin-left: 10px;
+}
+
+.cursor1 p {
+     color: #fff;
+     font-family: lato;
+     margin-right: 15px;
+
+}
+
+#page3 #imgs {
+     height: 100%;
+     width: 100%;
+     /* background-color: #fff; */
+     margin-top: -5%;
+     display: flex;
+     gap: 150px;
+     /* overflow: hidden; */
+}
+
+#page3 #imgs #imgleft {
+     height: 60%;
+     width: 45%;
+     background-color: #fff;
+     margin-left: 3%;
+     /* background-image: url(https://www.pixelflakes.com/_vercel/image?url=https://wp.pixelflakes.com/wp-content/uploads/2023/02/fleet-house-hero-1.jpg&w=1536&q=80);
+     background-size: cover; */
+     overflow: hidden;
+}
+
+#imgleft img {
+     height: 95%;
+     width: 100%;
+}
+
+.div1 {
+     position: relative;
+     top: -37%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 5px;
+     left: -43%;
+}
+
+.div1 h5 {
+     font-family: lato;
+     font-size: 20px;
+     /* top: -55%;
+     left: 5%;
+     position: relative; */
+}
+
+.div1 h6 {
+     font-size: 20px;
+     color: #717070;
+     font-family: lato;
+     margin-left: -3%;
+}
+
+
+
+.div2 {
+     position: relative;
+     top: -50%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 5px;
+     left: 15%;
+}
+
+.div2 h5 {
+     font-family: lato;
+     font-size: 20px;
+     /* top: -55%;
+     left: 5%;
+     position: relative; */
+}
+
+.div2 h6 {
+     font-size: 20px;
+     color: #717070;
+     font-family: lato;
+     margin-left: -3%;
+}
+
+#page3 #imgs #imgright {
+     height: 40%;
+     width: 35%;
+     background-color: #fff;
+     margin-top: 10%;
+     /* background-image: url(https://www.pixelflakes.com/_vercel/image?url=https://wp.pixelflakes.com/wp-content/uploads/2023/02/56LS_CS_Cover-1.jpg&w=1536&q=80);
+     background-size: cover; */
+     overflow: hidden;
+}
+
+#outerimg {
+     height: 30%;
+     width: 30%;
+     background-color: #fff;
+     margin-top: -55%;
+     margin-left: 55%;
+     overflow: hidden;
+}
+
+#outerimg img {
+     height: 100%;
+     width: 100%;
+}
+
+#imgright img {
+     height: 100%;
+     width: 100%;
+}
+
+
+
+#moveimgs {
+     height: 400px;
+     width: 400px;
+     /* background-color: #292727; */
+     margin-left: 35%;
+     position: relative;
+     top: 10%;
+     /* overflow: hidden; */
+}
+
+.moveimg1 {
+     height: 100%;
+     width: 120%;
+     background-color: #fff;
+}
+
+.moveimg1 img {
+     height: 100%;
+     width: 100%;
+}
+
+.moveimg2 {
+     height: 90%;
+     width: 110%;
+     background-color: #771e1e;
+     position: relative;
+     top: -95%;
+     left: 5%;
+}
+
+.moveimg2 img {
+     height: 100%;
+     width: 100%;
+}
+
+.moveimg3 {
+     height: 500px;
+     width: 350px;
+     background-color: #3c2ea4;
+     position: relative;
+     top: -200%;
+     left: 15%;
+}
+
+.moveimg3 img {
+     height: 100%;
+     width: 100%;
+}
+
+#page4 {
+     height: 100vh;
+     width: 100%;
+     background-color: rgb(20, 20, 20);
+     /* text-align: center; */
+
+}
+
+#page4 h1 {
+     font-size: 80px;
+     font-family: lato;
+     color: #636363;
+     margin-left: 5%;
+     line-height: 70px;
+     margin-top: -10%;
+}
+
+#page4 p {
+     font-family: lato;
+     color: #817f7f;
+     margin-left: 75%;
+     margin-top: -10%;
+     font-size: 15px;
+     font-weight: 600;
+}
+
+#page4 .cursor {
+     height: 40px;
+     width: 130px;
+     background-color: #141313;
+     position: absolute;
+     z-index: 9999;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     /* justify-self: center; */
+     gap: 10px;
+     scale: 0;
+     /* display: none; */
+}
+
+.point {
+     height: 5px;
+     width: 5px;
+     background-color: #fff;
+     margin-left: 20px;
+}
+
+.cursor #h1 {
+     font-family: lato;
+     font-size: 8px;
+     color: #fff;
+     margin-top: 1px;
+}
+@font-face {
+     font-family: regular;
+     src: url(https://www.pixelflakes.com/_nuxt/fonts/AtHaussStd-Regular.420a7b4.woff2);
+}
+#page5{
+     height: 100vh;
+     width: 100%;
+     background-color: #ebe8e8;
+     text-align: center;
+}
+#page5 p{
+     font-family: regular;
+     font-size:50px;
+     line-height: 45px;
+     position: relative;
+     top: 25%;
+     /* left: 35%; */
+
+}
+
+.container{
+     width: 100%;
+     /* background-color: #1f1f1f; */
+     height: 200px;
+     position:relative;
+     top: 40%;
+     display: inline-block;
+     white-space: nowrap;
+     overflow-x:hidden;
+     display: flex;
+     gap: 90px;
+     /* margin-right: 60px; */
+
+}
+
+.container img{
+     height: 150px;
+     width: 150px;
+     color: #fff;
+     animation: move 5s linear infinite forwards;
+}
+@keyframes move {
+     0%{
+          transform: translateX(0%);
+     }
+     100%{
+          transform: translateX(-600%);
+     }
+     
+}
+
+#page6{
+     height: 200vh;
+     width: 100%;
+     background-color: #ebe8e8;
+     display: flex;
+     gap: 5px;
+}
+#page6 #picture{
+     height: 550px;
+     width: 700px;
+     position: relative;
+     top: 10%;
+     left: 10%;
+}
+#picture video{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+.para{
+     height: 200px;
+     width: 400px;
+     /* background-color: #fff; */
+     margin-left: 12%;
+     margin-top: 7%;
+}
+.para p{
+     font-family: regular;
+     font-size: 18px;
+     color: #817f7f;
+     padding: 20px 5px;
+}
+.img1{
+     height: 400px;
+     width: 400px;
+     background-color: #201f1f;
+     position: relative;
+     top: 52%;
+     left: -30%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.img1 h5{
+     font-family: regular;
+     color: #fff;
+     font-size: 30px;
+     font-weight: 100;
+
+}
+.headings{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     /* align-items: center; */
+     justify-content: center;
+     margin-left: -110%;
+     margin-top:60%;
+}
+.headings a{
+     text-decoration: none;
+     font-family: regular;
+     font-size: 60px;
+     color: #000;
+     line-height: 40px;
+
+}.fonts{
+     height: 40px;
+     width: 300px;
+     /* background-color: #bd3434; */
+     position: relative;
+     top: 90%;
+     left: -26%;
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+.fonts i{
+     font-size: 25px;
+}
+#page6 h1{
+     font-family: regular;
+     margin-top: 87%;
+     margin-left: 2%;
+}
+#input{
+     margin-top: 90%;
+     margin-left: -17%;
+/* padding: 20px; */
+}
+#input input{
+     font-size: 20px;
+     padding: 10px;
+     border: none;
+
+     background-color: transparent;
+     border-bottom: 1px solid #4c4b4b;
+}
